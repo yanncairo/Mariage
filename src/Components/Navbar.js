@@ -1,20 +1,20 @@
 import {
-    BrowserRouter as Router,
-    Route,
+    BrowserRouter as 
     Link
   } from "react-router-dom";
-  import Home from "../pages/Home";
+  import React from "react";
+  import './Navbar.css'
 const Navbar = () => {
     return (
-        <Router>
+     
             <div class="topnav">
-                <Link to="/">Home</Link>
-                    <Route path="/">
-                        <Home />
-                    </Route>
-                 
+                 <Link to="/Home"><a class="active" >Home</a></Link>
+                <a >News</a>
+                <a >Contact</a>
+                <a >About</a>
+                
             </div>
-        </Router>
+  
     
     
 
